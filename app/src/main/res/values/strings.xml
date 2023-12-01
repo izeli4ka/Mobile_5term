@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">My first app</string>
+    <string name="heading1">Мармарис</string>
+    <string name="heading2">Мармарис мало похож на привычную Турцию, скорее он напоминает греческий курорт.</string>
+    <string name="text">В городе — горы, узкие улицы, утопающие в зелени, белые домики с красной черепицей и бурная ночная жизнь. Город находится в бухте на границе Средиземного и Эгейского морей. Каждый год в городе проводят международную парусную регату, на которую съезжаются европейцы.</string>
+    <string name="button">Купить билет</string>
+    <string name="img_desc">красивая картинка</string>
+    <string name="small1">Казань</string>
+    <string name="small2">Даламан</string>
+    <string name="small3">Ичмелер</string>
 </resources>

@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:contentDescription="@string/img_desc"
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,19 +17,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0" />
 
     <TextView
         android:id="@+id/heading1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="Мармарис"
-        android:textSize="28dp"
+        android:text="@string/heading1"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constrainedWidth="true"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image" />
 
     <TextView
@@ -38,8 +39,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
-        android:text="Мармарис мало похож на привычную Турцию, скорее он напоминает греческий курорт"
-        android:textSize="20dp"
+        android:text="@string/heading2"
+        android:textSize="20sp"
         app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
@@ -48,13 +49,13 @@
 
     <TextView
         android:id="@+id/text"
-        android:text="В городе — горы, узкие улицы, утопающие в зелени, белые домики с красной черепицей и бурная ночная жизнь. Город находится в бухте на границе Средиземного и Эгейского морей. Каждый год в городе проводят международную парусную регату, на которую съезжаются европейцы."
+        android:text="@string/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="10dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constrainedWidth="true"
         app:layout_constraintTop_toBottomOf="@id/heading2"
         app:layout_constraintHorizontal_bias="0"
@@ -67,13 +68,119 @@
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:text="Купить билет"
-        android:textSize="20dp"
+        android:text="@string/button"
+        android:textSize="20sp"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text" />
 
+    <ImageView
+        android:contentDescription="@string/img_desc"
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/_018_05_13_00_22_52_1777882843423422509_2370651647"
+        />
+
+    <TextView
+        android:id="@+id/small1"
+        android:text="@string/small1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/group1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="imageView3, small1"
+        app:flow_verticalGap="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
+    <ImageView
+        android:contentDescription="@string/img_desc"
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/_017_08_04_11_53_40_1573842873596576592_2370651647" />
+
+    <TextView
+        android:id="@+id/small2"
+        android:text="@string/small2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintTop_toBottomOf="@id/imageView4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="imageView4, small2"
+        app:flow_verticalGap="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
+    <ImageView
+        android:contentDescription="@string/img_desc"
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/_017_08_04_11_53_40_1573842889543457109_2370651647" />
+
+    <TextView
+        android:id="@+id/small3"
+        android:text="@string/small3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintTop_toBottomOf="@id/imageView5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="imageView5, small3"
+        app:flow_verticalGap="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
+<!--    <androidx.constraintlayout.helper.widget.Flow-->
+<!--        android:id="@+id/big_group"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:constraint_referenced_ids="group1, group2, group3"-->
+<!--        app:flow_horizontalGap="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/button" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
